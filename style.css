@@ -70,7 +70,6 @@
 .pictext {
   background-color: #4C5760;
   color: white;
-
   font-size: 16px;
   padding: 16px 32px;
 }
@@ -79,6 +78,9 @@
 }
 .piclink:hover{
   color: #E9CDA5;
+}
+.visit{
+  text-decoration: none;
 }
 .visit-restaurant{
   background-color: #93A8AC;
