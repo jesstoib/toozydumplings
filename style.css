@@ -1,20 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700");
-@import url("https://fonts.googleapis.com/css?family=Playfair+display:300,400,500,600,700");
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", helvetica, sans-serif;
 }
 .page{
   display: flex;
   flex-wrap: wrap;
-}
-.header{
-  background-color: #EAEDF0;
-  height: 50px;
-  width: 100%;
 }
 .jumbotron{
   background-image: url("assets/dumplingmany.jpg");
@@ -24,7 +19,7 @@
   width: 100%;
 }
 #headtext{
-  font-family: "Playfair Display", helvetica, sans-serif;
+  font-family: "Poppins", helvetica, sans-serif;
   text-align: center;
   vertical-align: middle;
   padding: 50px 0;
@@ -35,12 +30,11 @@
   padding: 5px 10px 5px 10px;
 }
 #subtext{
-  font-family: "Roboto", helvetica, sans-serif;
   text-align: center;
   vertical-align: middle;
   color: white;
   font-size: 3.5vw;
-  text-shadow: 1.5px 1.5px #E9CDA5;
+  text-shadow: 1px 1px #E9CDA5;
   margin: 0;
   padding: 5px 10px 5px 10px;
 }
@@ -76,7 +70,7 @@
 .pictext {
   background-color: #4C5760;
   color: white;
-  font-family: "Roboto", helvetica, sans-serif;
+
   font-size: 16px;
   padding: 16px 32px;
 }
@@ -88,16 +82,16 @@
 }
 .visit-restaurant{
   background-color: #93A8AC;
-  height: 545px;
+  height: 620px;
   width: 100%;
 }
 .buy-online{
   background-color: #92828D;
-  height: 545px;
+  height: 670px;
   width: 100%;
 }
 #headcome{
-  font-family: "Playfair Display", helvetica, sans-serif;
+  font-family: "Poppins", helvetica, sans-serif;
   font-style: semi-bold;
   text-align: center;
   padding-top: 20px;
@@ -110,7 +104,6 @@
   font-weight: bold;
 }
 #come{
-  font-family: "Roboto", helvetica, sans-serif;
   padding: 20px;
   color: white;
   font-size: 20px;
@@ -124,7 +117,7 @@
   padding: 10px;
 }
 #headabout{
-  font-family: "Playfair Display", helvetica, sans-serif;
+  font-family: "Poppins;", helvetica, sans-serif;
   font-style: semi-bold;
   text-align: center;
   padding-top: 20px;
@@ -132,37 +125,57 @@
   font-size: 40px;
 }
 #about{
-  font-family: "Roboto", helvetica, sans-serif;
-  padding: 20px;
-  color: #4C5760;
   font-size: 16px;
   text-align: justify;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 5px 20px 20px 20px;
+  padding: 0px 10px 0px 10px;
 }
 .reviews{
   background-color: #D05353;
-  height: 400px;
   width: 100%;
+}
+.revholder{
+  display: flex;
+  flex-wrap: wrap;
+}
+.revbox{
+  background-color: white;
+  height: 115px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 5px 5px;
+  margin: 10px auto 10px auto;
+  padding: 15px;
+  border-style: solid;
+  border-width: medium;
+}
+#star{
+  text-align: center;
 }
 .footer{
   background-color: #4C5760;
-  height: 50px;
   width: 100%;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  margin: auto;
+  padding: 15px;
 }
 
 @media only screen and (min-width: 601px) {
 .visit-restaurant,.buy-online{
     width: 50%;
+    height: 545px;
 }
 #about{
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 75px;
+  margin-right: 75px;
 }}
 @media only screen and (min-width: 625px) {
 .jumbotron{
     min-height: 400px;
 }}
+
 @media only screen and (min-width: 735px) {
 .jumbotron{
     min-height: 600px;
